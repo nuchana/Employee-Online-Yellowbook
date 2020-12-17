@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import Container from "./Container";
-import Row from "./Row";
-import Col from "./Col";
-import Card from "./Card";
-import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
+import SiteHead from "./SiteHead";
+import Navbar from "./Navbar";
 import API from "../utils/API";
 
 class EmployeeContainer extends Component {
@@ -12,7 +8,7 @@ class EmployeeContainer extends Component {
     employees: [],
   };
 
-  // When this component mounts, search for the movie "The Matrix"
+  // When this component mounts, search for employees
   componentDidMount() {
     this.searchEmployees("");
   }
@@ -29,7 +25,6 @@ class EmployeeContainer extends Component {
         <SiteHead />
         {this.state.employees.length > 0 &&
         <Navbar emplyees={this.state.employees} />}
-
       </div>
 
     );
