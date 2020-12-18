@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import SiteHead from "./SiteHead";
-import Navbar from "./Navbar";
-import API from "../utils/API";
+import SiteHead from "./SiteHead/index";
+import Navbar from "./Navbar/index";
+import axios from "axios";
 
 class EmployeeContainer extends Component {
   state = {
@@ -10,21 +10,18 @@ class EmployeeContainer extends Component {
 
   // When this component mounts, search for employees
   componentDidMount() {
-    this.searchEmployees("");
-  }
-
-  searchEmployees = query => {
-    API.search(query)
-      .then(res => this.setState({ employees: res.data.results }))
-      .catch(err => console.log(err));
-  };
+    axios.get(`https://randomuser.me/api/?results=20&nat=Aus`)
+      .then(res => {
+        this.setState({ employees: res.data.results });
+      });
+}
 
   render() {
     return (
       <div classname="App">
         <SiteHead />
         {this.state.employees.length > 0 &&
-        <Navbar emplyees={this.state.employees} />}
+        <Navbar employees={this.state.employees} />}
       </div>
 
     );

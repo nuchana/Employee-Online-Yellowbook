@@ -1,5 +1,9 @@
 .form {
     border: 1px;
     border-color: black;
-    background-color: rgb(137, 184, 247);
+    background-color: lightblue;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
 }

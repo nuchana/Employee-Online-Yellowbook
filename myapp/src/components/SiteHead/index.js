@@ -4,12 +4,12 @@ import "./style.css";
 function SiteHead() {
 
     return (
-        <div classname="wrapper">
-            <div classname="title">
+        <div className="wrapper">
+            <div className="title">
                 Employee Directory
             </div>
             <br></br>
-            <div classname="tagline">
+            <div className="tagline">
                 Employee Information for all employees anywhere anytime!
             </div>
         </div>

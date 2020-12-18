@@ -9,10 +9,10 @@ class Navbar extends Component {
         filteredEmployees: []
     };
 
-    ComponentDidMount() {
+    componentDidMount() {
         if (this.state.filteredEmployees.length < 1) {
             this.setState({
-                filteredEmployees: this.props.exmployees
+                filteredEmployees: this.props.employees
             })
         }
     }
@@ -60,4 +60,3 @@ class Navbar extends Component {
 
 export default Navbar;
 
-}
