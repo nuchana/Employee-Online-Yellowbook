@@ -14,14 +14,18 @@ class EmployeeContainer extends Component {
       .then(res => {
         this.setState({ employees: res.data.results });
       });
-}
+  }
 
   render() {
     return (
       <div classname="App">
         <SiteHead />
-        {this.state.employees.length > 0 &&
-        <Navbar employees={this.state.employees} />}
+        {/* <Navbar employees = {this.state.employees.length > 0} /> */}
+        { this.state.employees.length > 0 && 
+        <Navbar employees = {this.state.employees} />}
+
+    
+    
       </div>
 
     );
