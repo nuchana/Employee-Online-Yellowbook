@@ -20,7 +20,7 @@
 3. Open http://localhost:3000 to view it in the browser.
 4. The page will reload if you make edits. You will also see any lint errors in the console.
 
-* [See Heroku Live Site](https://glacial-coast-30043.herokuapp.com/)
+* [See Deployed Site](https://glacial-coast-30043.herokuapp.com/)
 
 
 ## Usage
@@ -29,7 +29,7 @@
 
 Homepage displaying employee directory
 
-![Site](public/assets/directory.png)
+![Site](./public/assets/directory.png)
 
 
 ### Snippets
