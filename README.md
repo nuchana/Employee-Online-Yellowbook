@@ -29,7 +29,8 @@
 
 Homepage displaying employee directory
 
-![Site](./public/assets/directory.png)
+![Site](public/directory.png)
+
 
 
 ### Snippets
