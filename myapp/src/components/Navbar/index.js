@@ -17,7 +17,7 @@ class Navbar extends Component {
         }
     }
 
-    
+
     handleInputChange = event => {
         this.setState({
             searchTerm: event.target.value
