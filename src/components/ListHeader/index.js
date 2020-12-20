@@ -3,7 +3,7 @@ import "./style.css";
 import Card from '../Card';
 
 class ListHeader extends React.Component {
-
+     // a class component to setState handling/updating changes made in name sorting
     state = {
         alphabetical: true,
         ascending: true,

@@ -3,7 +3,7 @@ import "./style.css";
 import ListHeader from "../ListHeader";
 
 class Navbar extends Component {
-
+    // a class component to setState handling changes made in searchTerm and filteredemployees
     state = {
         searchTerm: "",
         filteredEmployees: []

@@ -15,7 +15,7 @@ class EmployeeContainer extends Component {
         this.setState({ employees: res.data.results });
       });
   }
-
+  // Use the React DOM render() method to render the App class we created into the root div in our HTML.
   render() {
     return (
       <div classname="App">
